@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .menu-res{
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-main nav-main">
+            <div class="nav-logo">
+                <img src="logo.png" alt="logo" srcset="">
+            </div>
+            <div class="nav-link">
+                <ul style="color:white;">
+                    <li><a href="http://">Home</a></li>
+                    <li><a href="http://">Shop</a></li>
+                    <li><a href="http://">Blog</a></li>
+                    <li><a href="http://">About</a></li>
+                    <li><a href="http://">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-bar2" style="color:  white;">
+            <div class="navbar-main nav-main2">
+                <div class="nav-logo">
+                    <img src="logo.png" id="logo-res" alt="logo" srcset="">
+                </div>
+                <div class="nav-link2" id="nav-l2">
+                    <img src="meu.png" id="menu-icon-res" alt="logo" srcset="" style="height: 34px;cursor: pointer;" onclick="showMenu()">
+                    <ul id="menu-res" style="color:white; display: none; list-style: none;">
+                        <li><a href="http://">Home</a></li>
+                        <li><a href="http://">Shop</a></li>
+                        <li><a href="http://">Blog</a></li>
+                        <li><a href="http://">About</a></li>
+                        <li><a href="http://">Contact</a></li>
+                    </ul> 
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        function showMenu(){
+            document.getElementById('menu-res').style.display='block';
+            document.getElementById('menu-icon-res').style.display='none';
+            document.getElementById('logo-res').style.display='none';
+            document.getElementById('nav-l2').style.width='100%';
+        }
+    </script>
+</body>
+</html>
